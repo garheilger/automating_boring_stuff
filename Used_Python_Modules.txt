@@ -1,0 +1,16 @@
+Automating the boring stuff with Python, Al Sweigart
+====================================================
+
+Interessante und verwendet Python Module
+
+re			- Modul zum Arbeiten mit regulären Ausdrücken (Regular Expressions, RegEx)
+pyperclip	- Modul zum Arbeiten mit der Zwischenablage
+os			- Modul mit Basisfunktionen des Betriebssystems 
+os.path		- Modul für Arbeiten mit Pfadangaben und Verzeichnissen
+pathlib		- Modul für Arbeiten mit Pfaden, Dateien, Besitzern und Rechten
+send2trash	- Modul zum Verschieben von Dateien in den Papierkorb
+zipfile		- Modul zur Kompression/Dekompression von Dateien
+shelve		- Modul zum Speichern von Programm und Konfigurationsdaten
+pprint		- Modul zur formatierten Ausgabe von Daten
+random		- Modul zur Erzeugung von Zufallszahlen
+shutil		- Modul für die Manipulation von Dateien und Verzeichnissen
