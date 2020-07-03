@@ -1,9 +1,9 @@
-#! python3
-#  oct2mod.py - Converts UNIX filesystem permissions from integer (octal) numbers to UNIX rwx-symbols
-#  Date: 29. January 2020
-#  Author: G. Arheilger
-#  Version: 0.1
-
+'''
+  oct2mod.py - Converts UNIX filesystem permissions from integer (octal) numbers to UNIX rwx-symbols
+  Date: 29. January 2020
+  Author: G. Arheilger
+  Version: 0.1
+'''
 import os
 
 stat_info = os.stat(os.getcwd())
@@ -13,32 +13,32 @@ stat_info = os.stat(os.getcwd())
 # TODO remove comment: modeOct = oct(modeInt)
 # TODO remoce comment: modeStr = modeOct[4:]
 
-modeStr = '615'
+mode_str = '615'
 
 # UNIX file permission dictionary
 modes = {
-         '0':'---',
-         '1':'--x',
-         '2':'-w-',
-         '3':'-wx',
-         '4':'r--',
-         '5':'r-x',
-         '6':'rw-',
-         '7':'rwx'
+    '0':'---',
+    '1':'--x',
+    '2':'-w-',
+    '3':'-wx',
+    '4':'r--',
+    '5':'r-x',
+    '6':'rw-',
+    '7':'rwx'
 }
 
 mode = ''
-modeList = list()
-for i in range(len(modeStr)):
-    modeList.append(modes[modeStr[i]])
-    mode = mode + '|' + modes[modeStr[i]]
+mode_list = list()
+for i in range(len(mode_str)):
+    mode_list.append(modes[mode_str[i]])
+    mode = mode + '|' + modes[mode_str[i]]
 mode = mode + '|'
 
 print('')
-print('UNIX permissions (decimal value) ' + modeStr)
+print('UNIX permissions (decimal value) ' + mode_str)
 print('------------------------------------------------------------------------')
-print('UNIX permissions list (User, Group, Other) ', modeList)
-print('UNIX permissions for User ', modeList[0])
-print('UNIX permissions for Group ', modeList[1])
-print('UNIX permissions for All others ', modeList[2])
+print('UNIX permissions list (User, Group, Other) ', mode_list)
+print('UNIX permissions for User ', mode_list[0])
+print('UNIX permissions for Group ', mode_list[1])
+print('UNIX permissions for All others ', mode_list[2])
 print('UNIX permissions as formatted string ' + mode)
