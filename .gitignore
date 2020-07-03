@@ -1,6 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
-/automate_online-materials
-/Chapter_8_File_operations
+/automate_online-materials/*
 /.idea
 /.project
 /venv
