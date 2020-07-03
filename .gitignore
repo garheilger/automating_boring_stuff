@@ -1,6 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
-.idea/*
-.project/*
+.gitignore
+.idea
+.project
 automate_online-materials/*
 venv/*
 *.txt
