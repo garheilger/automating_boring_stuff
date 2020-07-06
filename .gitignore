@@ -5,5 +5,4 @@
 venv/*
 *.txt
 *.pyc
-*.pyw
 automate_online_materials/
