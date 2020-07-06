@@ -2,6 +2,6 @@
 .gitignore
 .idea
 .project
-automate_online-materials/*
 venv/*
 *.txt
+/automate_online-materials/
