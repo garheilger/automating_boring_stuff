@@ -4,4 +4,6 @@
 .project
 venv/*
 *.txt
-/automate_online-materials/
+*.pyc
+*.pyw
+/automate_online_materials/
